@@ -85,7 +85,7 @@ export default function formatEvent(attributes = {}) {
     }
 
     icsFormat += apple_color ? `X-APPLE-CALENDAR-COLOR:${apple_color}\r\n` : '';
-    icsFormat += apple_location ? `X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Rue Lac de la Thuile 73370 Le Bourget-du-Lac;X-APPLE-RADIUS=50;X-TITLE=Université de Savoie:geo:45.643189,5.870184\r\n` : '';
+    icsFormat += apple_location ? `X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-ADDRESS=Rue Lac de la Thuile\\n73370 Le Bourget-du-Lac\\nFrance;X-APPLE-RADIUS=50;X-TITLE=Université de Savoie - Campus du Bourget du Lac:geo:45.642586,5.871763\r\n` : '';
 
     icsFormat += recurrenceRule ? `RRULE:${recurrenceRule}\r\n` : ''
     icsFormat += duration ? `DURATION:${formatDuration(duration)}\r\n` : ''
